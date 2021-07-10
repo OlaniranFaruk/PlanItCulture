@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Simple Success Confirmation Popup</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+.modal-confirm {		
+	color: #636363;
+	width: 325px;
+	font-size: 14px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}	
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+}	
+.modal-confirm .icon-box {
+	color: #fff;		
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #1f82b8;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-confirm .icon-box i {
+	font-size: 58px;
+	position: relative;
+	top: 3px;
+}
+.modal-confirm.modal-dialog {
+	margin-top: 80px;
+}
+.modal-confirm .btn {
+	color: #fff;
+	border-radius: 4px;
+	background: #1f82b8;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+	background: #1f82b8;
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade visible">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>				
+				<h4 class="modal-title w-100">Awesome!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">U hebt een nieuw evenement aangemaakt, scroll naar beneden voor een volledige lijst van alle evenementen</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>     
+</body>
+</html>
+<section id="hero" class="hero d-flex align-items-center">
+
+      <div class="intro">
+         <h1> Info Event </h1>
+         De eerste stap is om alle info omtrent je event te noteren. Vermeld de praktische info alsook voor wie het event bedoeld is en hoeveel bezoekers/deelnemers zich kunnen aanmelden. 
+      </div>
+
+
+      <div class="center">
+          <div class="mb-3">
+            <label for="eventName" class="form-label">Naam Event:</label>
+            <input type="text" class="form-control" id="eventName" placeholder="Event Naam" [(ngModel)]="newinfoevent.Eventname" required>
+            
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Datum:</label>
+            <input type="date" class="form-control" id="date" min="1997-01-01" max="2100-12-31" [(ngModel)]="newinfoevent.Date"  required>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Tijdstip:</label>
+            <input type="time" class="form-control" id="time" [(ngModel)]="newinfoevent.Time" required> 
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Locatie:</label>
+            <input type="text" class="form-control" id="location" placeholder="Locatie" [(ngModel)]="newinfoevent.Location" required>
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Omschrijving:</label>
+            <br>
+            <textarea class="form-control" rows="4" cols="80 " name="description" [(ngModel)]="newinfoevent.description" required></textarea>
+            
+          </div>
+        </div>
+
+         
+</section><!-- End Hero -->
+
+<hr>
+
+<section id="hero" class="hero d-flex align-items-center">
+
+    <div class="intro sike">
+        <h1> Info Event </h1>
+     </div>
+
+
+    <div class="center">
+    <div class="form-group">
+        <label for="category">Categorie:</label>
+            <select class="form-control" name="category" [(ngModel)]="newinfoevent.category">
+                <option value="Theater ">Theater </option>
+                <option value="Tentoonstelling ">Tentoonstelling </option>
+                <option value="Concert">Concert</option>
+                <option value="Workshop ">Workshop </option>
+                <option value="Reis ">Reis </option>
+                <option value="Cursus">Cursus</option>
+                <option value="Lezing">Lezing</option>
+                <option value="Dansvoorstelling">Dansvoorstelling</option>
+                <option value="Beurs">Beurs</option>
+                <option value="Filmvoorstelling">Filmvoorstelling</option>
+
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="Target group" class="form-label">DoelGroep:</label>
+            <input type="number" class="form-control" id="Target group" placeholder="bvb. 7" [(ngModel)]="newinfoevent.Targetgroup" required>
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="amount" class="form-label">Aantal:</label>
+            <input type="number" class="form-control" id="amount" placeholder="bvb. 7" [(ngModel)]="newinfoevent.AmntTargetGroup" required>
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="website" class="form-label">Website:</label>
+            <input type="text" class="form-control" id="website" placeholder="bvb. www.plan-it-culture.be" [(ngModel)]="newinfoevent.Website" required>
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="Organizer" class="form-label">Organizer(s):</label>
+            <input type="text" class="form-control" id="organizer" placeholder="Organizer" [(ngModel)]="newinfoevent.Organizer" required>
+            
+        </div>
+    
+    <button type="submit" href="#myModal" class="btn btn-primary" data-toggle="modal" [disabled]="toggleButton()" (click)="CreateNewEvent()">Create Event</button>
+
+    <div class="alert alert-warning cardgrid" role="alert">
+      ***Zorg ervoor dat alle velden correct zijn ingevuld!!!
+    </div> 
+  
+    
+    
+    </div>
+</section>
+<div class="eventcard">
+        <div class="card center-card">
+            <div class="card-header">
+                <h1>Evenementen Lijst</h1>
+                
+                Hier onder vind je alle toegevoegd evenementen:
+              </div>
+            <!-- <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Datum</th>
+                        <th scope="col">Tijdstip</th>
+                        <th scope="col">Locatie</th>
+                        <th scope="col">Omschrijving</th>
+                        <th scope="col">Categorie</th>
+                        <th scope="col">DoelGroep + Aantal</th>
+                        <th scope="col">Website</th>
+                        <th scope="col">Organizer(s)</th>
+                      </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor = "let infoevent of infoevents">
+                    <td>{{infoevent.Eventname}}</td>
+                    <td>{{infoevent.Date}}</td>
+                    <td>{{infoevent.Time}}</td>
+                    <td>{{infoevent.Location}}</td>
+                    <td>{{infoevent.description}}</td>
+                    <td>{{infoevent.category}}</td>
+                    <td>{{infoevent.Targetgroup}} + {{infoevent.AmntTargetGroup}}</td>
+                    <td>{{infoevent.Website}}</td>
+                    <td>{{infoevent.Organizer}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table> -->
+            <div class="container">
+            <div class="row">
+            <div class="col-6 cardgrid" *ngFor = "let infoevent of infoevents">
+              
+              <div class="accordion" id="accordionPanelsStayOpenExample" >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      {{infoevent.Eventname}}
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>Omschrijving:</strong> {{infoevent.description}}<br>
+
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <strong><i>Locatie:</i></strong> {{infoevent.Location}} <br>                         
+                            <strong><i>Datum and Tijdstip:</i></strong> {{infoevent.Date}} , {{infoevent.Time}}  <br>
+                            <strong><i>Categorie:</i></strong> {{infoevent.category}}
+                          </div>
+
+                          <div class="col">
+                            <strong><i>DoelGroep + Aantal: </i></strong> {{infoevent.Targetgroup}} + {{infoevent.AmntTargetGroup}} <br>
+                            <strong><i>Website: </i></strong> {{infoevent.Website}} <br>
+                            <strong><i>Organisatoren: </i></strong> {{infoevent.Organizer}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+</div>
+

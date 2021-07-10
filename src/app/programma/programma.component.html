@@ -1,0 +1,77 @@
+<section id="hero" class="hero d-flex align-items-center">
+
+    <div class="intro">
+        <h1> Programma </h1>
+        Het programma van je event kan natuurlijk niet ontbreken. Hieronder kan je noteren hoe de dag(en) zal/zullen ingevuld worden. 
+     </div>
+     <div class="center">
+        <div class="mb-3">
+                <small><i>***Hier moet jij selecteren voor welke event moet jij gecontacteerd geworden, als de event niet bestaat moet uw eerst aanmaken bij <a href="#">"Info Event"</a></i></small><br>
+                <label for="event">Event:</label>
+                <select class="form-control" id="event">
+                  <option>None selected</option>
+                  
+                </select>
+              
+          </div>
+          Tijd:
+          <div class = "form-group mx-sm-3 mb-2">
+                <label for="van">Van:</label>
+              <input type="time" class="form-control" id="van" required>
+          </div>
+          <div class = "form-group mx-sm-3 mb-2">
+            <label for="tot">Tot:</label>
+          <input type="time" class="form-control" id="tot" required>
+         </div>
+
+         <div>
+            <label for="description">Beschrijving:</label>
+            <input type="text" class="form-control" id="description" required>
+         </div>
+
+         <div>
+            <label for="location">Locatie/Ruimte:</label>
+            <input type="text" class="form-control" id="location" required>
+         </div>
+
+         <div>
+            <label for="responsible">Verantwoordelijke:</label>
+            <input type="text" class="form-control" id="responsible" required>
+         </div>
+
+         <div>
+            <label for="note">Opmerkingen:</label>
+            <textarea class="form-control" rows="4" cols="80 " name="note"></textarea>
+         </div>
+
+       </div>
+
+</section>
+
+<div class="eventcard">
+    <div class="card center-card">
+        <div class="card-header">
+            <h1>Programma Lijst</h1>
+            
+            Hier onder vind je alle toegevoegd programmas:
+          </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="3">Algemeen</th>
+                    <th scope="col" colspan="2">Organisatoren</th>
+                </tr>
+                <tr>
+                    <th scope="col">Tijd<br> Van-Tot</th>
+                    <th scope="col">Beschrijving</th>
+                    <th scope="col">Locatie/Ruimte</th>
+                    <th scope="col">Verantwoordelijke</th>
+                    <th scope="col">Opmerkingen</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+    </div>
+</div>

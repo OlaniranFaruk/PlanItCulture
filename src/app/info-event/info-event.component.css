@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cardgrid{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.intro{
+    margin-left: 20px;
+    width: 40%;
+}
+button{
+    padding: 5px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .sike{
+      visibility: hidden;
+  }
+
+.center-card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 15px;
+}
+.eventcard{
+    margin-bottom: 30px;
+}

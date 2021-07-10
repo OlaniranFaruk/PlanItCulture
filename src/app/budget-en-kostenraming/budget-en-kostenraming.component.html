@@ -1,0 +1,102 @@
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="intro">
+        <h1> Budget en kostenraming </h1>
+        Elk event brengt een kostenplaatje met zich mee. Deze tabel zal een duidelijk overzicht geven wat de uitgaven en inkomsten zullen zijn voor jouw event. 
+     </div>
+     <div class="center">
+      <div class="mb-3">
+        <small><i>***Hier moet jij selecteren voor welke event moet jij gecontacteerd geworden, als de event niet bestaat moet uw eerst aanmaken bij <a href="#">"Info Event"</a></i></small><br>
+        <label for="event">Event:</label>
+        <select class="form-control" id="event">
+          <option>None selected</option>
+          
+        </select>
+      
+      </div>
+
+
+      <div class="uitgaven">
+            <h1>Uitgaven</h1>
+            <div class = "form-group mx-sm-3 mb-2">
+                <label for="kostensoort">KostenSoort:</label>
+              <input type="text" class="form-control" id="kostensoort" >
+          </div>
+          <div class = "form-group mx-sm-3 mb-2">
+            <label for="bedrag">Bedrag:</label>
+          <input type=number step=any class="form-control" id="bedrag" >
+          </div>
+          <button type="button" class="btn btn-primary">Add Budget</button>
+    </div>
+
+    <div class="inkomsten">
+          <h1>Inkomsten</h1>
+          Noteer hier het entreegeld of de prijs om deel te nemen aan het event.
+          
+          <div class = "form-group mx-sm-3 mb-2">
+            <label for="kostensoort">Soort ticket:</label>
+          <input type="text" class="form-control" id="kostensoort" >
+          </div>
+
+       <div class="row">
+              <div class = "col form-group mx-sm-3 mb-2">
+                <label for="price">Prijs per persoon:</label>
+                <input type="number" step="any" class="form-control" id="price" >
+              </div>
+              <div class = "col form-group mx-sm-3 mb-2">
+                <label for="Aantal">Aantal persoon:</label>
+                <input type="number" class="form-control" id="aantal" >
+              </div>
+      </div>
+      </div>
+          <button type="button" class="btn btn-primary">Add Budget</button>
+    </div>
+
+
+
+</section>
+
+<div class="eventcard">
+  <div class="card center-card">
+      <div class="card-header">
+          <h1>Budget Lijst per event</h1>
+          
+          Hier onder vind je alle toegevoegd uitgaven/inkomsten:
+        </div>
+      <table class="table table-hover">
+          <thead>
+
+              <tr>
+                  <th scope="col">Kostensoort</th>
+                  <th scope="col">Bedrag</th>
+                  <th scope="col"></th>
+
+              </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+  </div>
+</div>
+
+<div class="eventcard">
+  <div class="card center-card">
+      <div class="card-header">
+          <h1>Totaal Budget per Event</h1>
+        </div>
+      <table class="table table-hover">
+          <thead>
+
+              <tr>
+                  <th scope="col">Event</th>
+                  <th scope="col">Uitgaven</th>
+                  <th scope="col">Inkomsten</th>
+
+              </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+  </div>
+</div>
