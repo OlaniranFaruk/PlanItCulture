@@ -25,6 +25,16 @@ PlanItCulture is a web application designed to help event organizers plan and ma
 3. Start the server using `npm start`
 4. Open the application in your browser at `http://localhost:3000`
 
+## Screenshots
+
+Here are some screenshots of PlanItCulture:
+
+{% for image in site.static_files %}
+{% if image.path contains 'images/' %}
+![{{ image.path }}]({{ site.baseurl }}{{ image.path }})
+{% endif %}
+{% endfor %}
+
 ## Contributing
 
 Contributions are welcome. Please open an issue or submit a pull request to suggest changes or improvements.
