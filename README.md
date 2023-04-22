@@ -29,11 +29,7 @@ PlanItCulture is a web application designed to help event organizers plan and ma
 
 Here are some screenshots of PlanItCulture:
 
-{% for image in site.static_files %}
-{% if image.path contains 'images/' %}
-![{{ image.path }}]({{ site.baseurl }}{{ image.path }})
-{% endif %}
-{% endfor %}
+![App Screeenshot](/images/2021-07-19.png)
 
 ## Contributing
 
