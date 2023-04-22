@@ -30,7 +30,7 @@ PlanItCulture is a web application designed to help event organizers plan and ma
 Here are some screenshots of PlanItCulture:
 
 ![App Screeenshot](/images/2021-07-19.png)
-![App Screeenshot](/images/2021-07-19(1).png)
+![App Screeenshot](/images/2021-07-19 (1).png)
 ![App Screeenshot](/images/2021-07-19(2).png)
 ![App Screeenshot](/images/2021-07-19(3).png)
 ![App Screeenshot](/images/2021-07-19(4).png)
