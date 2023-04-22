@@ -1,27 +1,34 @@
-# PlanItCultureV1
+Thank you for providing the link to your GitHub project. Here's a sample README.md file for your project:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+# PlanItCulture
 
-## Development server
+PlanItCulture is a web application designed to help event organizers plan and manage their events. The application allows organizers to collaborate with other organizers and management staff, as well as manage inventory for events.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Organizers can create and manage events
+- Organizers can collaborate with other organizers and management staff
+- Organizers can manage inventory for events
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- HTML
+- CSS
+- Angular
+- MySQL
+- 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clone the repository using `git clone https://github.com/OlaniranFaruk/PlanItCulture.git`
+2. Install dependencies using `npm install`
+3. Start the server using `npm start`
+4. Open the application in your browser at `http://localhost:3000`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contributing
 
-## Running end-to-end tests
+Contributions are welcome. Please open an issue or submit a pull request to suggest changes or improvements.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is licensed under the MIT License. See the LICENSE.md file for details.
